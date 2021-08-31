@@ -1,0 +1,150 @@
+<?php
+    $msg=0;
+    @$msg = $_REQUEST['msg'];
+
+?>
+<!DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="Página Pessoal, desenvolvida como Portfólio de mostragem de projetos.">
+            <meta name="keywords" content="Caio Paiva,Portfólio,Página Pessoal, Responsiva">
+            <meta name="author" content="Caio Paiva">
+            <meta name="robots" content="index, follow">    
+            <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+            <link rel="stylesheet" type="text/css" href="css/style_slideShow.css" media="screen">
+            <link rel="icon" href="imagens/bolt-solid.svg">
+            <script src="https://kit.fontawesome.com/36cbe52d45.js" crossorigin="anonymous"></script>
+            
+            <title>Caio Paiva</title>
+        </head>
+    <body>
+        <div id="container">
+            <header class="menu-fixo "> 
+                <a href="index.html"><h1 class="logo margem">Caio Paiva</h1></a>
+                <p>Caio Paiva</p>
+                <button class="btn-menu margem"><i class="fas fa-bars"></i></button>   
+                <nav class="menu">
+                    <a class="btn-close"><i class="fa fa-times"></i></a>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sobremim.html">Sobre mim</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Projetos</a></li>
+                        <li><a href="#">Foco</a></li>
+                    </ul>
+                </nav>
+            </header>
+        <!--SlideShow-->
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <img src="imagens/slide1.png" alt="Imagem 1" title="Imagem 1" style="width: 100%;">
+                </div>
+        
+                <div class="mySlides fade">
+                    <img src="imagens/slide2.png" alt="Imagem 2" title="Imagem 2" style="width: 100%;">
+                </div>
+        
+                <div class="mySlides fade">
+                    <img src="imagens/slide3f.jpg" alt="Imagem 3" title="Imagem 3" style="width: 100%;">
+                </div>
+        
+                <div class="mySlides fade">
+                <!--  <div class="numbertext">4 / 3</div> -->
+                    <img src="imagens/slide4.jpg" alt="Imagem 3" title="Imagem 3" style="width: 100%; ">
+                <!-- <div class="text">Caption Three</div> -->
+                </div>
+
+                <div  style="text-align:center;">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+            
+        
+        <!--BANNER-->
+        <div class="banner">
+            <div class="title">
+                <h2>COMO UM RELÂMPAGO <i class="fas fa-bolt"></i></h2>
+                <h3>Iniciante na vasta área de conhecimento da Programação e buscando desenvolver soluções de alto nível!</h3>
+            </div>
+            <div class="buttons">
+                <button class="btn btn-cadastrar bg-white radius">Cadastrar<i class="fa fa fa-arrow-circle-right"></i></button>
+                <a href="sobremim.html"><button class="btn btn-sobre radius">Sobre<i class="fa fa-question-circle"></i></button></a>
+
+            </div>
+        </div>
+        </div>
+        <!--SERVIÇOS-->
+        <main class="servicos container radius">
+            <article class="servico bg-white radius">
+                <a href="#"><img src="imagens/dev.svg" alt="Desenvolvimento Web" title="Web"></a>
+                <div class="inner">
+                    <h1>Desenvolvimento Web</h1>
+                    <p>Projetar Sistemas que atendam a necessidade do Usuário</p>
+                    <p>Arquitetar sistemas que promovam a facilitação de usabilidade e promovam melhor experiência dos usuários em qualquer que seja o dispotivo.</p>
+                    <a href="https://westworld1.000webhostapp.com/" target="_blank">Projeto Web desenvolvido em conjunto</a>
+                </div>
+            </article>
+            
+            <article class="servico bg-white radius radius">
+                <a href="#"><img src="imagens/code.png" alt="Desenvolvimento Desktop" title="Programação"></a>
+                <div class="inner">
+                    <h1>Desenvolvimento de Aplicações</h1>
+                    <p>Projetar sistemas para automatização de funções que demandariam muito tempo e recursos.</p>
+                    <p>Aplicações que promovam ao usuário a melhor experiência visual e que sejam faceis de usar e acessíveis. </p>
+                </div>
+            </article>
+
+            <article class="servico bg-white radius">
+                <a href="#"><img src="imagens/mobile.svg" alt="Desenvolvimento Mobile" title="Mobile"></a>
+                <div class="inner">
+                    <h1>Desenvolvimento Mobile</h1>
+                    <p>Projetos de aplicações  voltadas a multiplataformas que entregem as soluções demandas pelos usuários.</p>
+                    <p>Desenvolvimento em conjunto com com finalida de apresentação de outros projetos.</p>
+                    <a href="https://westworld1.000webhostapp.com/" target="_blank">Trabalho Desenvolvidos em conjunto</a>
+                </div>
+            </article>
+        </main>
+        <!--NEWSLETTER-->
+        <?php if($msg==enviado): ?>
+        <script>
+            alert('Os dados foram enviados, obrigado!');
+        </script>
+        <?php else: ?>
+        <section class="newsletter container bg-black">
+            <h2>Contate-me agora</h2>
+            <h3>Fazemos projetos de Sites e muito mais!</h3>
+            <form action="processaForm.php" method="POST">
+                <input class="bg-black radius" type="text" name="nome" id="nome"placeholder="Digite seu nome:">
+                <input class="bg-black radius" type="email" name="email" id="email"placeholder="Digite seu email:">
+                <input class="bg-black radius" type="text" name="telefone" id="telefone" placeholder="Digite o seu número:">
+                <textarea class="textarea bg-black radius" type="textarea" name="textarea" id="textarea" placeholder="Digite sua mensagem:"></textarea>
+                <button  type="submit" class="bg-white radius">Enviar</button>
+            </form>
+        </section>
+        <?php endif; ?>
+        <!--FOOTER-->
+        <footer class="rodape container">
+            <div class="social-icons">
+                <a href="facebook.com/CaioPaiva.csp" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-google"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/caio-paiva-9118491a2/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            </div>
+            <p class="copyright">
+                Designed e Engineered by Caio Paiva™ Direitos Reservados 2020.
+            </p>
+        </footer>
+        <!-- JQUERY -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="script.js"></script>
+        </script>
+    </body>
+</html>

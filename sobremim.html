@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/style_sm.css" media="screen">
+
+    <link rel="icon" href="imagens/bolt-solid.svg">
+    <script src="https://kit.fontawesome.com/36cbe52d45.js" crossorigin="anonymous"></script>
+    <title>Sobre Mim</title>
+</head>
+<body>
+    <header class="cabecalho"> 
+        <div class="menu-fixo">
+            <a href="index.html"><h1 class="logo margem">Caio Paiva</h1></a>
+            <p>Caio Paiva</p>
+            <button class="btn-menu margem"><i class="fas fa-bars"></i></button>   
+            <nav class="menu">
+                <a class="btn-close"><i class="fa fa-times"></i></a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobremim.html">Sobre mim</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#">Foco</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <article class="texto">
+        <h1>Quem Sou</h1>
+        <p>Estudante do Curso de Análise e Desenvolvimento de Sistemas, atualmente tenho 18 anos.
+        Guarulhense, e futuro Programador.</p>
+        <img class="imgCaio" src="imagens/caio.jpg" alt="Caio Paiva" title="Caio Paiva">
+        <p>Atualmente estou buscando meu ingresso no mercado de trabalho com o desenvolvimento web Front-End.</p>
+        <p>Por isso foco meus esforços e estudos no aprimoramento das principais linguagem que
+            proporcionam uma melhor interação como o usúario e algo que possar facilitar as atividades das pessoas. </p>
+        <p>Projetar aplicações que sejam visualmente limpas e que possam ser utilizadas por qualquer pessoa.</p>
+    </article>
+    <!--NEWSLETTER-->
+    <section class="newsletter container bg-black">
+        <h2>Contate-me agora</h2>
+        <h3>Fazemos projetos de Sites e muito mais!</h3>
+        <form action="processaForm.php" method="POST">
+            <input class="bg-black radius" type="text" name="nome" id="nome"placeholder="Digite seu nome:">
+            <input class="bg-black radius" type="email" name="email" id="email"placeholder="Digite seu email:">
+            <input class="bg-black radius" type="text" name="telefone" id="telefone" placeholder="Digite o seu número:">
+            <textarea class="textarea bg-black radius" type="textarea" name="textarea" id="textarea" placeholder="Digite sua mensagem:"></textarea>
+            <button  type="submit" class="bg-white radius">Enviar</button>
+        </form>
+    </section>
+    <!--FOOTER-->
+    <footer class="rodape container">
+        <div class="social-icons">
+            <a href="facebook.com/CaioPaiva.csp" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/caio-paiva-9118491a2/"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <p class="copyright">
+            Designed e Engineered by Caio Paiva™ Direitos Reservados 2020.
+        </p>
+</footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script languange="JavaScript" src="script.js"></script>
+
+</body>
+</html>
