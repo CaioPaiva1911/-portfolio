@@ -1,8 +1,8 @@
 <?php
 
-    $_REQUEST
+    $_REQUEST;
     $para = "caiopaiva.cp@hotmail.com,caiowick@hotmail.com";
-    $assunto = "Contato pelo site"
+    $assunto = "Contato pelo site";
     $nome = $_REQUEST['nome'];
     $email = $_REQUEST['email'];
     $telefone = $_REQUEST['telefone'];
@@ -14,11 +14,11 @@
     $corpo .= "<br><b>Telefone:</b> $telefone" ;    
     $corpo .= "<br><b>Mensagem:</b> $mensagem" ;
 
-    $header = "Content-Type: text/html; charset= utf-8\n"
+    $header = "Content-Type: text/html; charset= utf-8\n";
     $header .= "From: $email Reply-to: $email\n";
 
     //Função PHP para mandar Emails
     @mail($para,$assunto,$corpo,$header);
 
-    header("location:index.html?msg=enviado")
+    header("location:index.html?msg=enviado");
 ?>
