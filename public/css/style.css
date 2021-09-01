@@ -64,7 +64,7 @@ nav{
     padding: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
-    /*box-shadow: 1px 3px rgba(0,0, 0, 0.15);*/
+    box-shadow: 1px 3px rgba(0,0, 0, 0.15);
 }
 .logo{
     width: 60px; 
@@ -311,7 +311,7 @@ Para impressoras. Muito usado para dar uma versão de impressão do site.
         width: 214px; 
         height: 60px; 
         float: left; 
-        background: url(../imagens/logo_cp1.png) center center/214px no-repeat; 
+        background: url(../imagens/iconCP.png) center center/60px no-repeat; 
         font-size: 0; 
         border-radius: 10px;
         margin: 2% 0 0 2%;
@@ -366,6 +366,8 @@ Para impressoras. Muito usado para dar uma versão de impressão do site.
 }
 /*MEDIUM DEVICES - TABLETS & DESKTOPS*/
 @media screen and (min-width: 960px){
+    
+  
     .servico{
         box-shadow: 0px 2px 8px -1px rgba(0,0,0,0.24);
     }
@@ -420,6 +422,9 @@ Para impressoras. Muito usado para dar uma versão de impressão do site.
         height: 100px;
         margin-bottom: 1%;
     }
+    .banner{
+        margin-top: 0;
+    }
     .menu-fixo{
         height: auto;
         padding: 0;
@@ -434,13 +439,12 @@ Para impressoras. Muito usado para dar uma versão de impressão do site.
     .menu{
         width: auto; 
         line-height: 100px; 
-        float: right; 
+        float: right;
+        background-color: transparent; 
         display: block !important; 
         position: static;
     }
-    .menu ul{
-        background-color: rgba(0,0, 0, 0.15);
-    }
+    
     .menu li{
         padding: 0; 
         float: left; 
@@ -473,8 +477,9 @@ Para impressoras. Muito usado para dar uma versão de impressão do site.
     .newsletter textarea{
         max-width: 90%; 
         min-width: 85%; 
-        min-height: 50%; 
-        max-height: 300px; 
+        /* min-height: 50%;  */
+        max-height: 100px;
     }
+ 
    
 }

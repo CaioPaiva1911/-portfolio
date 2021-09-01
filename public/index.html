@@ -1,8 +1,4 @@
-<?php
-    $msg=0;
-    @$msg = $_REQUEST['msg'];
 
-?>
 <!DOCTYPE html>
     <html lang="pt-br">
         <head>
@@ -22,8 +18,9 @@
     <body>
         <div id="container">
             <header class="menu-fixo "> 
-                <a href="index.html"><h1 class="logo margem">Caio Paiva</h1></a>
-                <p>Caio Paiva</p>
+             
+                <a href="index.html" id="logo-marca"><h1 class="logo margem">Caio Paiva</h1></a>
+                
                 <button class="btn-menu margem"><i class="fas fa-bars"></i></button>   
                 <nav class="menu">
                     <a class="btn-close"><i class="fa fa-times"></i></a>
@@ -48,7 +45,7 @@
                 </div>
         
                 <div class="mySlides fade">
-                    <img src="imagens/slide3f.jpg" alt="Imagem 3" title="Imagem 3" style="width: 100%;">
+                    <img src="imagens/slide3.jpg" alt="Imagem 3" title="Imagem 3" style="width: 100%;">
                 </div>
         
                 <div class="mySlides fade">
@@ -57,7 +54,12 @@
                 <!-- <div class="text">Caption Three</div> -->
                 </div>
 
+                <div class="mySlides fade">
+                    <img src="imagens/slide5.jpg" alt="Imagem 3" title="Imagem 3" style="width: 100%;">
+                </div>
+
                 <div  style="text-align:center;">
+                    <span class="dot"></span>
                     <span class="dot"></span>
                     <span class="dot"></span>
                     <span class="dot"></span>
@@ -112,14 +114,14 @@
             </article>
         </main>
         <!--NEWSLETTER-->
-        <?php if($msg==enviado): ?>
+        <!-- <?php if(($msg==enviado): ?>
         <script>
             alert('Os dados foram enviados, obrigado!');
         </script>
-        <?php else: ?>
+        <?php else: ?> -->
         <section class="newsletter container bg-black">
             <h2>Contate-me agora</h2>
-            <h3>Fazemos projetos de Sites e muito mais!</h3>
+            <h3></h3>
             <form action="processaForm.php" method="POST">
                 <input class="bg-black radius" type="text" name="nome" id="nome"placeholder="Digite seu nome:">
                 <input class="bg-black radius" type="email" name="email" id="email"placeholder="Digite seu email:">
