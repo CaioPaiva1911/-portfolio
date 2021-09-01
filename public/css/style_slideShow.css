@@ -6,11 +6,11 @@ img{vertical-align: middle;}
 /*Slideshow container*/
 .slideshow-container{
     z-index: 0;
-    max-width: 500px;
+    max-width: 1000px;
     position: relative;
     top: 70px;
     margin-bottom: 68px;
-    height: 490px;
+    max-height: 240px;
 }
 /*Caption text*/
 
