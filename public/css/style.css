@@ -407,7 +407,8 @@ Para impressoras. Muito usado para dar uma versão de impressão do site.
     }
 }
 /*LARGE DEVICES - WIDE SCREEN*/
-@media screen and (min-width: 1280px){
+@media screen and (min-width: 1190px){
+    
     .btn-menu{
         background-color: none;
         display: none;
@@ -431,8 +432,8 @@ Para impressoras. Muito usado para dar uma versão de impressão do site.
         margin: 0;
     }
     .menu-fixo p{
-        margin: 2% auto;
-        font-size: 40px;
+        margin: 0 auto;
+        font-size: 25px;
         padding: 0;
     }
     
@@ -479,6 +480,14 @@ Para impressoras. Muito usado para dar uma versão de impressão do site.
         min-width: 85%; 
         /* min-height: 50%;  */
         max-height: 100px;
+    }
+
+    .container{
+        padding: 20px;
+    }
+
+    form input, textarea{
+        height: 10px;
     }
  
    

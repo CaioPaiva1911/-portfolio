@@ -1,5 +1,9 @@
 /*CSS*/
 
+#side{
+    display: none;
+}
+
 h1{
     font-size: 3em;
     text-align: center;
@@ -28,8 +32,35 @@ p{
     margin-top: 2%;
 }
 /*FULL SCREEN*/
-@media  screen and (min-width: 1090px) {
-    p{
-        font-size: 38px;
+@media  screen and (min-width: 1000px) {
+    article{
+        display: flex;
+        align-items: center;
+        margin: 2% 15%;
     }
+    .flex-item{
+        flex-grow: 1;
+    }
+    
+    #side{
+        display: block;
+        max-width: 500px;
+        max-height: 600px;
+    }
+
+    .texto{
+        width: 50%;
+        height: auto;
+        margin: 7% auto;
+        text-align: justify;
+        line-height: 30px;
+        
+        background: hsla(0,0%,62%,.1);
+    }
+    
+    p{
+        font-size: 18px;
+    }
+
+   
 }
