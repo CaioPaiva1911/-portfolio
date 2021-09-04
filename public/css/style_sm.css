@@ -9,7 +9,8 @@ h1{
     text-align: center;
 }
 .texto{
-    padding: 10px;
+    padding: 20px;
+    text-align: justify;
     margin-top: 15%;
     background-color: #fff;
 }
@@ -17,7 +18,7 @@ menu-fixo{
     margin-top: 0;
 }
 p{
-    font-size: 22px;
+    font-size: 14px;
     text-align: none;
     letter-spacing: 1.5px;
     
@@ -35,8 +36,11 @@ p{
 @media  screen and (min-width: 1000px) {
     article{
         display: flex;
+        justify-content: center;
         align-items: center;
+        flex-wrap:wrap;
         margin: 2% 15%;
+        padding: 30px;
     }
     .flex-item{
         flex-grow: 1;
@@ -45,7 +49,7 @@ p{
     #side{
         display: block;
         max-width: 500px;
-        max-height: 600px;
+        max-height: 70%;
     }
 
     .texto{
@@ -54,8 +58,8 @@ p{
         margin: 7% auto;
         text-align: justify;
         line-height: 30px;
-        
-        background: hsla(0,0%,62%,.1);
+        background: #f5f8ff;
+        box-shadow: 0 20px 32px -8px #ebf2ff, 0 0 1px 0 #a8b9d5;
     }
     
     p{
