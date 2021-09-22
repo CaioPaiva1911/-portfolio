@@ -139,7 +139,7 @@ nav{
     float: left;
     text-align: center; 
     padding: 3% 4%; 
-    background: url(../imagens/ruido.png) no-repeat fixed;
+    background: url(../imagens/ruido.png);
 }
 .title {
     width: 100%; 
@@ -252,7 +252,7 @@ color: rgb(255,3, 3);
     height: 50px;
 }
 /*RODAPÉ*/
-.rodape{  
+.rodape{
     background: linear-gradient(to right, #ce2e3c, #da6709);
 }
 .social-icons a{ 
@@ -311,7 +311,7 @@ Para impressoras. Muito usado para dar uma versão de impressão do site.
         width: 214px; 
         height: 60px; 
         float: left; 
-        background: url(../imagens/iconCP.png) center center/60px no-repeat; 
+        background: url(../imagens/iconCP.png) center center/50px no-repeat; 
         font-size: 0; 
         border-radius: 10px;
         margin: 2% 0 0 2%;

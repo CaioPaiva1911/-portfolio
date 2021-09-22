@@ -14,26 +14,20 @@
             <script src="https://kit.fontawesome.com/36cbe52d45.js" crossorigin="anonymous"></script>
             
             <title>Caio Paiva</title>
+
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+            <script>
+                $(function (){
+                    $("#header").load("header.html");
+                    $("#footer").load("footer.html");
+                });
+            </script>
+
         </head>
     <body>
-        <div id="container">
-            <header class="menu-fixo "> 
-             
-                <a href="index.html" id="logo-marca"><h1 class="logo margem">Caio Paiva</h1></a>
-                
-                <button class="btn-menu margem"><i class="fas fa-bars"></i></button>   
-                <nav class="menu">
-                    <a class="btn-close"><i class="fa fa-times"></i></a>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="sobremim.html">Sobre mim</a></li>
-                        <li><a href="#">Contato</a></li>
-                        <li><a href="#">Projetos</a></li>
-                        <li><a href="">Tecnologias</a></li>
-                    </ul>
-                </nav>
-            </header>
+        <div id="header"></div>
         <!--SlideShow-->
+        <div id="container">
             <div class="slideshow-container">
 
                 <div class="mySlides fade">
@@ -131,22 +125,7 @@
             </form>
         </section>
         <?php endif; ?>
-        <!--FOOTER-->
-        <footer class="rodape container">
-            <div class="social-icons">
-                <a href="facebook.com/CaioPaiva.csp" target="_blank"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-google"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/caio-paiva-9118491a2/" target="_blank"><i class="fa fa-linkedin"></i></a>
-            </div>
-            <p class="copyright">
-                Designed e Engineered by Caio Paiva™ Direitos Reservados 2020.
-            </p>
-        </footer>
-        <!-- JQUERY -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="script.js"></script>
-        </script>
+        <div id="footer"></div>
+        <script src="scripts/script.js"></script>
     </body>
 </html>
