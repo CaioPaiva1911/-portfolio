@@ -23,6 +23,10 @@ ul{
 img{
     max-width: 100%;
 }
+
+input{
+    caret-color: lightsalmon;
+}
 .logo{ 
     background: url(imagens/code.png); 
     width: 100px; 
