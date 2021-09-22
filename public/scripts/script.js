@@ -1,12 +1,14 @@
-    
-$(".btn-menu").click(function(){
-    $(".menu").show();
-    //$(".slideshow-container").hide();
+$('documento').ready(function (){
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
 });
 
-$(".btn-close").click(function(){
+$("html").on('click','.btn-menu', function(){
+    $(".menu").show();
+});
+
+$("html").on('click','.btn-close', function(){
     $(".menu").hide();
-    //$(".slideshow-container").show();
 });
 
 
