@@ -134,6 +134,8 @@ nav{
 .menu li a:focus{
     color: silver;
 }
+
+
 /*BANNER*/
 .banner{ 
     box-shadow: 0px 2px 8px -1px rgba(0,0,0,0.24);
@@ -275,6 +277,9 @@ color: rgb(255,3, 3);
     color: rgba(255,255, 255, 0.7);
 }
 
+.cv{
+     color: #ff7440 !important;
+}
 
 /* MEDIA TYPES
 screen
